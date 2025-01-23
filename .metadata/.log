@@ -1,0 +1,137 @@
+!SESSION 2019-08-10 07:35:08.162 -----------------------------------------------
+eclipse.buildId=v5.4.0.015
+java.version=1.8.0_65
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=ja_JP
+Command-line arguments:  -os win32 -ws win32 -arch x86 -data D:\workspace_e2s\kit18_gr-peach
+
+!ENTRY org.eclipse.jface 2 0 2019-08-10 07:35:13.250
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2019-08-10 07:35:13.250
+!MESSAGE A conflict occurred for ALT+CTRL+T:
+Binding(ALT+CTRL+T,
+	ParameterizedCommand(Command(org.eclipse.team.svn.ui.command.EditPropertiesCommand,Show Properties,
+		,
+		Category(org.eclipse.team.svn.ui.command.category,SVN,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@1e63b4d,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(ALT+CTRL+T,
+	ParameterizedCommand(Command(org.eclipse.tm.terminal.connector.local.command.launch,Open Local Terminal on Selection,
+		,
+		Category(org.eclipse.tm.terminal.view.ui.commands.category,Terminal Commands,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@aafd70,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY com.renesas.cdt.synergy.pagecommon 4 0 2019-08-10 07:35:23.813
+!MESSAGE C:\Renesas\e2_studio\internal\projectgen\arm\packs
+!STACK 0
+java.nio.file.NoSuchFileException: C:\Renesas\e2_studio\internal\projectgen\arm\packs
+	at sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:79)
+	at sun.nio.fs.WindowsException.asIOException(WindowsException.java:106)
+	at sun.nio.fs.WindowsWatchService$Poller.implRegister(WindowsWatchService.java:345)
+	at sun.nio.fs.AbstractPoller.processRequests(AbstractPoller.java:260)
+	at sun.nio.fs.WindowsWatchService$Poller.run(WindowsWatchService.java:533)
+	at java.lang.Thread.run(Thread.java:745)
+
+!ENTRY com.renesas.cdt.synergy.packs 4 0 2019-08-10 07:35:23.891
+!MESSAGE java.io.FileNotFoundException: C:\Renesas\e2_studio\internal\projectgen\arm\packs\supportfilepacks.xml (指定されたパスが見つかりません。)
+!STACK 0
+javax.xml.transform.TransformerException: java.io.FileNotFoundException: C:\Renesas\e2_studio\internal\projectgen\arm\packs\supportfilepacks.xml (指定されたパスが見つかりません。)
+	at com.sun.org.apache.xalan.internal.xsltc.trax.TransformerImpl.getOutputHandler(TransformerImpl.java:521)
+	at com.sun.org.apache.xalan.internal.xsltc.trax.TransformerImpl.transform(TransformerImpl.java:336)
+	at com.renesas.cdt.synergy.packs.persist.InstalledPackSupportFilesPersist.save(InstalledPackSupportFilesPersist.java:57)
+	at com.renesas.cdt.synergy.packs.io.mcusupport.internal.SynergyMCUSupportFilesManager.saveKnownInstalledPacksList(SynergyMCUSupportFilesManager.java:403)
+	at com.renesas.cdt.synergy.packs.io.mcusupport.internal.SynergyMCUSupportFilesManager.initSupportFiles(SynergyMCUSupportFilesManager.java:101)
+	at com.renesas.cdt.synergy.packs.io.PackIOManager.initialisePackSystem(PackIOManager.java:351)
+	at com.renesas.cdt.synergy.packs.io.PackIOManager.forcePacksInitialisation(PackIOManager.java:202)
+	at com.renesas.cdt.synergy.packs.io.PackIOManager$1.run(PackIOManager.java:166)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+Caused by: java.io.FileNotFoundException: C:\Renesas\e2_studio\internal\projectgen\arm\packs\supportfilepacks.xml (指定されたパスが見つかりません。)
+	at java.io.FileOutputStream.open0(Native Method)
+	at java.io.FileOutputStream.open(FileOutputStream.java:270)
+	at java.io.FileOutputStream.<init>(FileOutputStream.java:213)
+	at java.io.FileOutputStream.<init>(FileOutputStream.java:101)
+	at com.sun.org.apache.xalan.internal.xsltc.trax.TransformerImpl.getOutputHandler(TransformerImpl.java:494)
+	... 8 more
+---------
+java.io.FileNotFoundException: C:\Renesas\e2_studio\internal\projectgen\arm\packs\supportfilepacks.xml (指定されたパスが見つかりません。)
+	at java.io.FileOutputStream.open0(Native Method)
+	at java.io.FileOutputStream.open(FileOutputStream.java:270)
+	at java.io.FileOutputStream.<init>(FileOutputStream.java:213)
+	at java.io.FileOutputStream.<init>(FileOutputStream.java:101)
+	at com.sun.org.apache.xalan.internal.xsltc.trax.TransformerImpl.getOutputHandler(TransformerImpl.java:494)
+	at com.sun.org.apache.xalan.internal.xsltc.trax.TransformerImpl.transform(TransformerImpl.java:336)
+	at com.renesas.cdt.synergy.packs.persist.InstalledPackSupportFilesPersist.save(InstalledPackSupportFilesPersist.java:57)
+	at com.renesas.cdt.synergy.packs.io.mcusupport.internal.SynergyMCUSupportFilesManager.saveKnownInstalledPacksList(SynergyMCUSupportFilesManager.java:403)
+	at com.renesas.cdt.synergy.packs.io.mcusupport.internal.SynergyMCUSupportFilesManager.initSupportFiles(SynergyMCUSupportFilesManager.java:101)
+	at com.renesas.cdt.synergy.packs.io.PackIOManager.initialisePackSystem(PackIOManager.java:351)
+	at com.renesas.cdt.synergy.packs.io.PackIOManager.forcePacksInitialisation(PackIOManager.java:202)
+	at com.renesas.cdt.synergy.packs.io.PackIOManager$1.run(PackIOManager.java:166)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.ease.ui.scripts 4 0 2019-08-10 07:35:24.250
+!MESSAGE Invalid keyword handler detected: org.eclipse.ease.ui.scripts.handler.editorSave
+!STACK 1
+org.eclipse.core.runtime.CoreException: Plug-in "org.eclipse.ease.ui.scripts" was unable to instantiate class "org.eclipse.ease.ui.scripts.keywordhandler.SaveEditorHandler".
+	at org.eclipse.core.internal.registry.osgi.RegistryStrategyOSGI.throwException(RegistryStrategyOSGI.java:194)
+	at org.eclipse.core.internal.registry.osgi.RegistryStrategyOSGI.createExecutableExtension(RegistryStrategyOSGI.java:186)
+	at org.eclipse.core.internal.registry.ExtensionRegistry.createExecutableExtension(ExtensionRegistry.java:905)
+	at org.eclipse.core.internal.registry.ConfigurationElement.createExecutableExtension(ConfigurationElement.java:243)
+	at org.eclipse.core.internal.registry.ConfigurationElementHandle.createExecutableExtension(ConfigurationElementHandle.java:55)
+	at org.eclipse.ease.ui.scripts.repository.impl.RepositoryService.startKeywordHandlers(RepositoryService.java:194)
+	at org.eclipse.ease.ui.scripts.repository.impl.RepositoryService.<init>(RepositoryService.java:121)
+	at org.eclipse.ease.ui.scripts.repository.impl.RepositoryService.getInstance(RepositoryService.java:81)
+	at org.eclipse.ease.ui.scripts.repository.impl.Startup.earlyStartup(Startup.java:21)
+	at org.eclipse.ui.internal.EarlyStartupRunnable.runEarlyStartup(EarlyStartupRunnable.java:90)
+	at org.eclipse.ui.internal.EarlyStartupRunnable.run(EarlyStartupRunnable.java:68)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.ui.internal.Workbench$56.run(Workbench.java:2852)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+Caused by: java.lang.NullPointerException
+	at org.eclipse.ease.ui.scripts.keywordhandler.SaveEditorHandler.<init>(SaveEditorHandler.java:52)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:422)
+	at java.lang.Class.newInstance(Class.java:442)
+	at org.eclipse.core.internal.registry.osgi.RegistryStrategyOSGI.createExecutableExtension(RegistryStrategyOSGI.java:184)
+	... 12 more
+!SUBENTRY 1 org.eclipse.equinox.registry 4 1 2019-08-10 07:35:24.250
+!MESSAGE Plug-in "org.eclipse.ease.ui.scripts" was unable to instantiate class "org.eclipse.ease.ui.scripts.keywordhandler.SaveEditorHandler".
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.ease.ui.scripts.keywordhandler.SaveEditorHandler.<init>(SaveEditorHandler.java:52)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:422)
+	at java.lang.Class.newInstance(Class.java:442)
+	at org.eclipse.core.internal.registry.osgi.RegistryStrategyOSGI.createExecutableExtension(RegistryStrategyOSGI.java:184)
+	at org.eclipse.core.internal.registry.ExtensionRegistry.createExecutableExtension(ExtensionRegistry.java:905)
+	at org.eclipse.core.internal.registry.ConfigurationElement.createExecutableExtension(ConfigurationElement.java:243)
+	at org.eclipse.core.internal.registry.ConfigurationElementHandle.createExecutableExtension(ConfigurationElementHandle.java:55)
+	at org.eclipse.ease.ui.scripts.repository.impl.RepositoryService.startKeywordHandlers(RepositoryService.java:194)
+	at org.eclipse.ease.ui.scripts.repository.impl.RepositoryService.<init>(RepositoryService.java:121)
+	at org.eclipse.ease.ui.scripts.repository.impl.RepositoryService.getInstance(RepositoryService.java:81)
+	at org.eclipse.ease.ui.scripts.repository.impl.Startup.earlyStartup(Startup.java:21)
+	at org.eclipse.ui.internal.EarlyStartupRunnable.runEarlyStartup(EarlyStartupRunnable.java:90)
+	at org.eclipse.ui.internal.EarlyStartupRunnable.run(EarlyStartupRunnable.java:68)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.ui.internal.Workbench$56.run(Workbench.java:2852)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.core.net 1 0 2019-08-10 07:35:26.625
+!MESSAGE System property http.proxyHost is set to 10.10.100.2 but should not be set.
+
+!ENTRY org.eclipse.core.net 1 0 2019-08-10 07:35:26.625
+!MESSAGE System property http.proxyPort is set to 8080 but should not be set.
+
+!ENTRY org.eclipse.core.net 1 0 2019-08-10 07:35:26.641
+!MESSAGE System property http.proxyHost is set to 10.10.100.2 but should not be set.
+
+!ENTRY org.eclipse.core.net 1 0 2019-08-10 07:35:26.657
+!MESSAGE System property http.proxyPort is set to 8080 but should not be set.
